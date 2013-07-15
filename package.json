@@ -1,0 +1,23 @@
+{
+	"name": "kylin",
+	"description": "Kirin HTTP Proxy Server",
+	"keywords": [
+		"proxy"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/nqdeng/kylin.git"
+	},
+	"author": "Nanqiao Deng <nqdeng@gmail.com>",
+	"version": "0.9.0",
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"dependencies": {
+		"commander": "1.0.x"
+  	},
+	"main": "lib/index.js",
+	"bin" : {
+		"kylin": "./bin/kylin"
+	}
+}

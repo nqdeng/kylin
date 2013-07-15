@@ -1,0 +1,21 @@
+﻿#! /usr/bin/env node
+
+var commander = require('commander'),
+	kylin = require('../lib/index'),
+	version = require('../package.json').version;
+
+	/**
+	 * Program entrance.
+	 */
+var main = function () {
+	commander
+		.version(version)
+		.option('-p, --port <number>', 'port number, default to 1080')
+		.parse(process.argv);
+		
+		kylin({
+			port: commander.port || 1080
+		});
+	};
+	
+main();
