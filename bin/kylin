@@ -1,4 +1,4 @@
-﻿#! /usr/bin/env node
+#! /usr/bin/env node
 
 var commander = require('commander'),
 	kylin = require('../lib/index'),
