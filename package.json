@@ -1,6 +1,6 @@
 {
 	"name": "kylin",
-	"description": "Kirin HTTP Proxy Server",
+	"description": "Kylin HTTP Proxy Server",
 	"keywords": [
 		"proxy"
 	],
@@ -9,7 +9,7 @@
 		"url": "git://github.com/nqdeng/kylin.git"
 	},
 	"author": "Nanqiao Deng <nqdeng@gmail.com>",
-	"version": "0.9.2",
+	"version": "0.10.2",
 	"engines": {
 		"node": ">=0.10.0"
 	},

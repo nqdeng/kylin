@@ -5,15 +5,17 @@ var commander = require('commander'),
 	version = require('../package.json').version;
 
 	/**
-	 * Program entrance.
+	 * Entrance.
 	 */
 var main = function () {
 	commander
 		.version(version)
+		.usage('[options] [hosts]')
 		.option('-p, --port <number>', 'port number, default to 1080')
 		.parse(process.argv);
 		
 		kylin({
+			hosts: commander.args[0] || './hosts',
 			port: commander.port || 1080
 		});
 	};
